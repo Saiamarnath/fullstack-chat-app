@@ -91,12 +91,14 @@ const MessageInput = () => {
 
             <button
                 type="button"
-                className={`hidden sm:flex btn btn-circle
-                        ${imagePreview ? "text-emerald-500" : "text-zinc-400"}`}
+                className={`btn btn-circle
+                            ${imagePreview ? "text-emerald-500" : "text-zinc-400"} 
+                            sm:flex`} // Ensures the button is visible in both small and larger screens
                 onClick={() => fileInputRef.current?.click()}
             >
                 <Image size={20} />
             </button>
+
 
         </div>
 
